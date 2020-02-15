@@ -5,8 +5,8 @@ bool isOdd(int i) {
   return ((i % 2) == 1);
 }
 
-int ExOr(int i) {
-  return (i ^ 2);
+int Square(int i) {
+  return (i * i);
 }
 
 std::vector<int> Solution::FilterInput(const std::vector <int> &input) { 
@@ -28,7 +28,7 @@ std::vector<int> Solution::MapInput(const std::vector <int> &input) {
     result.clear();
     return result;
   }
-  std::transform(input.begin(), input.end(), result.begin(), ExOr);
+  std::transform(input.begin(), input.end(), result.begin(), Square);
 
   return result;
 }

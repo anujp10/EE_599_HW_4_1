@@ -20,9 +20,9 @@ TEST(FilterShould_1, FilterReturn_1) {
 
 TEST(FilterShould_2, FilterReturn_2) {
   Solution solution;
-  std::vector <int> input = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+  std::vector <int> input = {-2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
   std::vector<int> actual = solution.MapInput(input);
-  std::vector <int> expected = {2, 3, 0, 1, 6, 7, 4, 5, 10, 11};
+  std::vector <int> expected = {4, 1, 0, 1, 4, 9, 16, 25, 36, 49, 64, 81};
   EXPECT_EQ(expected, actual);
 }
 
